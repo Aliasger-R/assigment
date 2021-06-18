@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>assignment</title>
+	
+<script>
+        
+    var usernameArray = ['apple', 'macbook', 'ipad'];
+    function validate() {
+    var username = document.getElementById("username").value; //assigns user input to variable
+    var password = document.getElementById("password").value; //^^
+
+    if (username == usernameArray[0] && password == "iphone") {
+        alert("You have successfully logged in");
+    window.location = "#";
+    return false; //condition must include both an acceptable username and password to >> 
+     } else 
+    {
+        alert("An invalid username or password was entered."); //if the users input was not acceptable then display a popup informing them so.
+    }
+}
+
+</script>
+     
+    <style> 
+         h1 {text-align: center; color: green;}
+     h2 {text-align: center; color: green;}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+        Body {  
+          font-family: Calibri, ;  
+          background-color:lightblue;  
+        }  
+        button {   
+         position: 
+               background-color: green;   
+               width: 50%;  
+                color: black;     
+                padding: 20px;   
+                margin-left: 70px;
+                margin-right: auto;   
+                border: none;   
+                cursor: pointer;
+                  
+                 }   
+         form {   
+                 text-align: center;
+            }   
+         input[type=text], 
+         input[type=password] {  
+             text-align: center; 
+                width: 50%;   
+                margin: 20px 0;  
+                padding: 12px 20px;   
+                display: inline-block;   
+                border: 2px solid green;   
+                box-sizing: border-box;   
+            }  
+         button:hover {   
+                opacity: 0.7;   
+            }   
+          .
+                
+             
+         .container {   
+                padding: 25px;   
+                background-color: lightblue;
+    
+        </style> 	
+	
+	
+</head>
+
+<body>
+	<h1>WELCOME TO OUR STORE</h1>
+<h2>Kindly Login to continue</h2>
+    <img src="apple_logo.jpg" class="center" >
+    <form>  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <div>
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button onclick="validate()" type="submit">Login</button>
+             
+           
+        </div>   
+    </form> 
+	
+	
+</body>
+</html>
